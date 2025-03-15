@@ -10,8 +10,8 @@ const HeroSection = () => {
     <section className='flex flex-col p-4 mt-12 items-center gap-12' id='hero'>
         <div className='flex flex-col gap-4 items-center order-2'>
           <p className='text-4xl'>Hi! I am  <TypeAnimate/></p>
-          <p>Developing user friendly and engaging web experiences.</p>
-          <div className='flex gap-8 items-center'>
+          <p className='opacity-85'>Developing user friendly and engaging web experiences.</p>
+          <div className='flex gap-8 items-center mt-4'>
             <Link href='https://www.linkedin.com/in/ankit-panghal-dev' target='_blank'><button className='btn linkedin-btn'><Linkedin/></button></Link>
             <Link href='https://github.com/ankit-panghal' target='_blank' ><button className='btn github-btn'><Github/></button></Link>
             <Link href='https://drive.google.com/file/d/1euafFBL1L31z1rPyi71zaBdZEHWTuQxU/view?usp=sharing' target='_blank' ><button className='btn resume-btn'><File/></button></Link> 
