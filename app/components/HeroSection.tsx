@@ -7,7 +7,7 @@ import TypeAnimate from './TypeAnimate'
 
 const HeroSection = () => {
   return (
-    <section className='flex flex-col p-4 mt-12 items-center gap-12' id='hero'>
+    <section className='gap-12' id='hero'>
         <div className='flex flex-col gap-4 items-center order-2'>
           <p className='text-4xl'>Hi! I am  <TypeAnimate/></p>
           <p className='opacity-85'>Developing user friendly and engaging web experiences.</p>

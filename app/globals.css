@@ -112,17 +112,29 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 scroll-smooth box-border;
   }
   body {
     @apply bg-background text-foreground;
   }
+  section{
+    @apply flex flex-col items-center px-12 py-6 pt-12
+  }
+  h2{
+    @apply text-3xl font-bold text-neutral-700 dark:text-white
+  }
+  h3{
+    @apply text-2xl font-semibold text-neutral-700
+  }
   p{
-   @apply text-center
+   @apply text-center text-wrap
   }
   button{
     @apply cursor-pointer  rounded-sm p-2
   }
+ li{
+  @apply animate-bounce
+ }
 }
 
 @layer utilities{
@@ -133,7 +145,7 @@
     @apply bg-sky-400 shadow-md text-white shadow-sky-400 
   }
   .github-btn{
-    @apply bg-zinc-700 shadow-md text-white shadow-zinc-700 
+    @apply bg-zinc-700 shadow-md text-white shadow-zinc-700 dark:bg-white dark:text-black dark:shadow-white
   }
   .resume-btn{
     @apply bg-orange-500 shadow-md text-white shadow-orange-500 

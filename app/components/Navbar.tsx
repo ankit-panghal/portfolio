@@ -17,22 +17,22 @@ const Navbar = () => {
     }, [])
 
   return (
-    <header className='flex justify-center p-4 sticky top-0'>
-    <Menubar className=' rounded-full p-6'>
+    <header className='flex justify-center p-4 '>
+    <Menubar className='rounded-full p-6'>
         <MenubarMenu>
             <MenubarTrigger><Link href='#hero'><Home/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><ActivitySquare/></MenubarTrigger>
+            <MenubarTrigger><Link href='#activity'><ActivitySquare/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><Braces/></MenubarTrigger>
+            <MenubarTrigger><Link href='#skills'><Braces/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><FolderKanban/></MenubarTrigger>
+            <MenubarTrigger><Link href='#projects'><FolderKanban/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><BookText/></MenubarTrigger>
+            <MenubarTrigger><Link href='#education'><BookText/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
         <MenubarTrigger>{mounted ? (theme === 'light' ? <Moon/> : <Sun/>) : null}</MenubarTrigger>
