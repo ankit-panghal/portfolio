@@ -15,17 +15,17 @@ const Projects = () => {
              {
                 projectsData.map((item) => (
                   <CarouselItem key={item.id}>
-                    <Card className='py-2 border-2 bg-accent-foreground'>
+                    <Card className='py-2 border-2 '>
                       <CardContent className='px-2'>
                         <Image className='rounded-md'  src={item.src} alt={item.title} width={300} height={700}/>
                       </CardContent> 
                       <CardFooter className='flex flex-col gap-4'>
-                        <h3 className='text-white dark:text-neutral-700 mt-[-15px]'>{item.title}</h3>
-                        <p className='text-white dark:text-neutral-700 mt-[-15px]'>{item.description}</p>
+                        <h3 className='text-neutral-700 mt-[-15px] dark:text-white'>{item.title}</h3>
+                        <p className='text-neutral-700 mt-[-15px] dark:text-white'>{item.description}</p>
                         <ul className='flex justify-center gap-6 overflow-x-scroll w-full'>
                           {
                             item.techStack.map((item,idx) => (
-                              <li className='animate-none' key={idx}>{item !== 'expressjs' ? <StackIcon className='w-8' name={item}/> : <ExpressLogo/>}</li>
+                              <li className='animate-none' key={idx}>{item !== 'expressjs' ? <StackIcon className='w-8' name={item}/> : <ExpressLogo width='36' height='36'/>}</li>
                             ))
                           }
                         </ul>

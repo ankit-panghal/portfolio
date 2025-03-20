@@ -126,15 +126,16 @@
   h3{
     @apply text-2xl font-semibold text-neutral-700
   }
+  h4{
+    @apply text-xl text-center font-semibold text-neutral-700 dark:text-white
+  }
   p{
    @apply text-center text-wrap
   }
   button{
     @apply cursor-pointer  rounded-sm p-2
   }
- li{
-  @apply animate-bounce
- }
+
 }
 
 @layer utilities{

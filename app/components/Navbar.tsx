@@ -1,6 +1,6 @@
 'use client';
 import {Menubar,MenubarContent,MenubarItem,MenubarTrigger} from '@/components/ui/menubar'
-import {Sun,Moon,Home,ActivitySquare,FolderKanban,BookText,Braces} from 'lucide-react'
+import {Sun,Moon,Home,ActivitySquare,Code,ShieldCheck,Braces,Contact} from 'lucide-react'
 import { useTheme } from "next-themes"
 
 
@@ -17,8 +17,8 @@ const Navbar = () => {
     }, [])
 
   return (
-    <header className='flex justify-center p-4 '>
-    <Menubar className='rounded-full p-6'>
+    <header className='flex justify-center p-2 sticky top-0 z-1000 '>
+    <Menubar className='rounded-full px-2 py-6'>
         <MenubarMenu>
             <MenubarTrigger><Link href='#hero'><Home/></Link></MenubarTrigger>
         </MenubarMenu>
@@ -29,10 +29,13 @@ const Navbar = () => {
             <MenubarTrigger><Link href='#skills'><Braces/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><Link href='#projects'><FolderKanban/></Link></MenubarTrigger>
+            <MenubarTrigger><Link href='#projects'><Code/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-            <MenubarTrigger><Link href='#education'><BookText/></Link></MenubarTrigger>
+            <MenubarTrigger><Link href='#certification'><ShieldCheck/></Link></MenubarTrigger>
+        </MenubarMenu>
+        <MenubarMenu>
+            <MenubarTrigger><Link href='#contact'><Contact/></Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
         <MenubarTrigger>{mounted ? (theme === 'light' ? <Moon/> : <Sun/>) : null}</MenubarTrigger>
